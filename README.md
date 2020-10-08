@@ -8,7 +8,7 @@
 
 - Installing dependencies:
 
-  `yarn`
+  `cd todo-detox-e2e && yarn`
 
 - Configuration ios device and android adv to run E2E(`.detoxrc.json`)
 
