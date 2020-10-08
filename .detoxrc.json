@@ -13,7 +13,7 @@
     "android": {
       "type": "android.emulator",
       "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
-      "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+      "build": "cd android && RN_SRC_EXT=e2emock.js && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
       "device": {
         "avdName": "Galaxy_Nexus_API_R"
       }

@@ -32,7 +32,7 @@
 
     ```
     ext {
-        ***
+        ...
         minSdkVersion = 18
         kotlinVersion = "1.3.41"
     }
@@ -41,14 +41,14 @@
   - Add the following line in `dependencies`
 
     ```
-        ***
+        ...
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     ```
 
   - Add the following lines in `allprojects.repositories`
 
     ```
-        ***
+        ...
         maven {
             url "$rootDir/../node_modules/detox/Detox-android"
         }
@@ -59,20 +59,20 @@
   - Add the following line `android.defaultConfig`
 
     ```
-        ***
+        ...
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     ```
 
   - Add the following line in `android.buildTypes.release`
     ```
-        ***
+        ...
         // Detox-specific additions to pro-guard
         proguardFile "${rootProject.projectDir}/../node_modules/detox/android/detox/proguard-rules-app.pro"
     ```
   - Add the following line in `dependencies`
 
     ```
-        ***
+        ...
         androidTestImplementation('com.wix:detox:+')
     ```
 
