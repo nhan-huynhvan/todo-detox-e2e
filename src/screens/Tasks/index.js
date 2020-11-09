@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Text, TouchableOpacity, View, FlatList} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import {useRoute} from '@react-navigation/native';
